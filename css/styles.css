@@ -6,7 +6,7 @@
 .page {
   display: flex;
   flex-wrap: wrap;
-  background-color: #FAAFO8;
+  background-color: #ffd26e;
 }
 .section {
   width: 100%;
@@ -53,9 +53,74 @@ a:active {
   height: auto;
 }
 /*Home Page */
-
+.title-picture {
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    background-color: #ffd26e;
+}
+.container {
+  height: auto;
+  background-color: #ffd26e;
+}
 /*Appetizer-Snacks*/
-
+.title {
+  background-color: #f7a46c;
+  height: auto;
+  font-size: 3em;
+  text-align: center;
+}
+  .recipeclass {
+    background-color: #ffd26e;
+    height: auto;
+    border-top: 1px solid #b53c17;
+    border-left: 1px solid #b53c17;
+    border-bottom: 1px solid #b53c17;
+  }
+  .picture {
+    height: auto;
+  }
+  .recipe {
+    height: auto;
+  }
 /*Main Course*/
 
 /*Desserts*/
+
+/*@media*/
+@media only screen and (max-width: 400px) {
+  .title  {
+    width: 100%;
+  }
+  .picture,
+  .recipe {
+    width: 100%;
+  }
+}
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .title  {
+    width: 100%;
+  }
+  .picture,
+  .recipe {
+    width: 50%;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .page {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  .title  {
+    width: 100%;
+  }
+  .picture,
+  .recipe {
+    width: 50%;
+  }
+}
