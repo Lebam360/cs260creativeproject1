@@ -6,7 +6,7 @@
 .page {
   display: flex;
   flex-wrap: wrap;
-  background-color: #79a3d4;
+  background-color: #FAAFO8;
 }
 .section {
   width: 100%;
@@ -36,8 +36,20 @@ img {
   max-width: 100%;
   height: auto;
 }
+a:link {
+  color: #FA812F;
+  text-decoration: none;
+}
+a:visited,
+a:hover,
+a:active {
+  color: #b1653f;
+}
+.bg-light {
+  background-color: #FEF3E2 !important;
+}
 .footer {
-  background-color: #ccd9e8;
+  background-color: #FEF3E2;
   height: auto;
 }
 /*Home Page */
