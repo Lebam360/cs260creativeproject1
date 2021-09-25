@@ -67,7 +67,7 @@ ol {
   display: block;
   margin-left: auto;
   margin-right: auto;
-    background-color: #ffd26e;
+  background-color: #ffd26e;
 }
 .container {
   height: auto;
@@ -108,6 +108,10 @@ ol {
   .recipe {
     width: 100%;
   }
+  .title-picture img {
+    height: 500px;
+    width: auto;
+  }
 }
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
@@ -117,6 +121,10 @@ ol {
   .picture,
   .recipe {
     width: 50%;
+  }
+  .title-picture img {
+    height: 500px;
+    width: auto;
   }
 }
 
@@ -133,5 +141,9 @@ ol {
   .picture,
   .recipe {
     width: 50%;
+  }
+  .title-picture img {
+    height: 500px;
+    width: auto;
   }
 }
