@@ -18,7 +18,7 @@ function onClick(e) {
   }
 
   // setup URL
-  let url = "www.themealdb.com/api/json/v1/1/" + urlEnd;
+  let url = "https://www.themealdb.com/api/json/v1/1/" + urlEnd;
   // call API
   fetch(url)
     .then(function(response) {
@@ -39,4 +39,4 @@ function updateResult(info) {
   document.getElementById('result').innerHTML = info;
 }
 
-document.getElementById('woo').addEventListener('click', onClick);
+document.getElementById('Submit').addEventListener('click', onClick);

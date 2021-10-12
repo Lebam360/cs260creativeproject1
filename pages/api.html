@@ -45,24 +45,27 @@
           each have the same enter box (nameField) and will appear under api-recipe
           perhaps get rid of the section class if it messes up formatting
          -->
-          Enter a Meal name: <input type="text" id="nameField" value=""><br>
+          <!--Enter a Meal name: <input type="text" id="nameField" value=""><br>-->
           <!---Avaliable Recipies: <span id="txtHint">Empty</span> -->
-          <!--<input id="mealButton" type="submit" value="Submit"> -->
-          <input placeholder="input" id="inputString">
+          <!-- <input id="mealButton" type="submit" value="Submit"> -->
+
           <div class="selector section">
+            <legend>If searching by meal: enter name and select "Meal Name".<br>If searching by letter: enter letter and select "First letter".
+              <br>If random search: select "Random" or just click submit.</legend>
+            <input placeholder="enter string" id="inputString">
             <p></p>
             <select id="selector">
-              <option value="name">Trivia</option>
-              <option value="letter">Math</option>
-              <option value="random">Date</option>
+              <option value="name">Meal Name</option>
+              <option value="letter">First letter</option>
+              <option value="random">Random</option>
             </select>
             <p></p>
+            <button id="Submit" class="pure-button pure-button-primary">Submit</button>
           </div>
         </form>
-        <div class="api-section">
-          <div class="api-recipe section"></div>
-        </div>
-      </div>
+        <p id="result"></p>
+        <script text="type/javascript" src="../js/script.js"></script>
+
       <div class="section footer">
         <p>The Github repository for this website:
           <a href="https://github.com/Lebam360/cs260creativeproject1">https://github.com/Lebam360/cs260creativeproject1</a> <br> Pair programmed by: <br>
