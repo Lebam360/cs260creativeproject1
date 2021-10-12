@@ -38,14 +38,23 @@
   <!--Bootstrap script -->
   <body>
     <div class="page">
-      <div class="form">
+      <div class="form section">
         <form>
-          Enter a Name: <input type="text" id="nameField" value=""><br>
-          Your Age: <span id="txtHint">Empty</span>
-          <input id="ageButton" type="submit" value="Submit">
+          <!--Put selector on top?
+          have a selector which decides which api to use
+          each have the same enter box (nameField) and will appear under api-recipe
+          perhaps get rid of the section class if it messes up formatting
+         -->
+          Enter a Meal name: <input type="text" id="nameField" value=""><br>
+          <!---Avaliable Recipies: <span id="txtHint">Empty</span> -->
+          <input id="mealButton" type="submit" value="Submit">
+          <div class="selector section">
+
+          </div>
         </form>
-        <p>Names and Ages</p>
-        <textarea id="displayNames">None</textarea> <br>
+        <div class="api-section">
+          <div class="api-recipe section"></div>
+        </div>
       </div>
       <div class="section footer">
         <p>The Github repository for this website:
