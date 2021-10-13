@@ -39,6 +39,7 @@ function onClick(e) {
         // update DOM with response
         //information of interest:
         //same as with name. I think the output should be the same. Always outputs meal array with one element
+        output += "Add to me! I want random recipe";
       }
       else if (type === "name") {
         // update DOM with response
@@ -50,6 +51,7 @@ function onClick(e) {
         //json.meals[i].strMeasure1 is the measurements of the ingredients. It seems to be tied to the ingreditent list (also goes to 20) and should be outputted with the ingredients
         //json.meals[i].strInstructions is one string full of the instructions
         //Perphaps add json.meals[i].strYoutube which links to youtube
+        output += "add me!";
       }
       else if (type === "letter"){
         //same as name. I would only put in json.meals[i].strMeal in an unordered list
