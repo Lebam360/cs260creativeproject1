@@ -56,6 +56,7 @@ a:active {
 }
 ul {
   padding: 0px 0px 0px 30px;
+  text-align: left;
 }
 ol {
    padding: 0px 0px 0px 30px;

@@ -34,8 +34,8 @@ function onClick(e) {
     //}).then(function(text) {
     }).then(function(json) {
       console.log(json); //For informational purposes
-
-      if (string === "" || type === "random") {
+      let output = "";
+      if (type === "random") {
         // update DOM with response
         //information of interest:
         //same as with name. I think the output should be the same. Always outputs meal array with one element
@@ -54,13 +54,19 @@ function onClick(e) {
       else if (type === "letter"){
         //same as name. I would only put in json.meals[i].strMeal in an unordered list
         //Other properties of interest
-        //strArea: "American" location where food came from
-        //strCategory: "Beef" category
-        //Is interesting to note, that the search letter doesn't always mean all of the meals start with that search letter
+        //json.meals[i].strArea: "American" location where food came from
+        //json.meals[i].strCategory: "Beef" category
+        output += "<ul>"
+        for (let i=0; i < json.meals.length; i++) {
+          output += "<li> "+ json.meals[i].strMeal;
+          output += "<br> Category: "+ json.meals[i].strCategory;
+          output += "<br> Area: "+ json.meals[i].strArea;
+        };
+        output += "</ul>";
       }
       // update DOM with response
     //  updateResult(text);
-      updateResult("temp");
+      updateResult(output);
     });
 }
 
