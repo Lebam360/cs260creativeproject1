@@ -111,7 +111,6 @@ ol {
   font-size: 2em;
   text-align: center;
 }
-
 .recipeclass {
     background-color: #ffd26e;
     height: auto;
@@ -138,6 +137,14 @@ ol {
   padding-left: 2px;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+#result a:link {
+  color: #e74f00;
+}
+#result a:visited,
+a:hover,
+a:active {
+  color: #6a2500;
 }
 .header {
   padding-top: 20px;

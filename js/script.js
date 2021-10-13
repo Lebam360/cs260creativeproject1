@@ -45,6 +45,7 @@ function onClick(e) {
           output += "<br><img src='" + json.meals[i].strMealThumb + "'>";
           output += "<br> Category: "+ json.meals[i].strCategory;
           output += "<br> Area: "+ json.meals[i].strArea + "<br>";
+          output += "Link to Recipe: <a href=" + json.meals[i].strYoutube + ">" + json.meals[i].strMeal + "</a>" + "<br>";
         }
         output += "</ul>"
       }
@@ -64,6 +65,7 @@ function onClick(e) {
           output += "<br><img src='" + json.meals[i].strMealThumb + "'>";
           output += "<br> Category: "+ json.meals[i].strCategory;
           output += "<br> Area: "+ json.meals[i].strArea + "<br>";
+          output += "Link to Recipe: <a href=" + json.meals[i].strYoutube + ">" + json.meals[i].strMeal + "</a>" + "<br>";
         }
         output += "</ul>";
       }
@@ -76,7 +78,8 @@ function onClick(e) {
         for (let i=0; i < json.meals.length; i++) {
           output += "<li> "+ json.meals[i].strMeal;
           output += "<br> Category: "+ json.meals[i].strCategory;
-          output += "<br> Area: "+ json.meals[i].strArea;
+          output += "<br> Area: "+ json.meals[i].strArea + "<br>";
+          output += "Link to Recipe: <a href=" + json.meals[i].strYoutube + ">" + json.meals[i].strMeal + "</a>" + "<br>";
         };
         output += "</ul>";
       }
