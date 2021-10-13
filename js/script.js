@@ -5,6 +5,7 @@ function onClick(e) {
   let s = document.getElementById('selector');
   let type = s.options[s.selectedIndex].value;
   let urlEnd = "";
+  let firstLetter = string.charAt(0); //"letter" only accepts one letter
 
   // check what the type is
   if (string === "" || type === "random") {
@@ -14,7 +15,7 @@ function onClick(e) {
     urlEnd = "search.php?s=" + string;
   }
   else if (type === "letter"){
-    urlEnd = "search.php?f" + string;
+    urlEnd = "search.php?f=" + firstLetter;
   }
 
   // setup URL
@@ -51,7 +52,11 @@ function onClick(e) {
         //Perphaps add json.meals[i].strYoutube which links to youtube
       }
       else if (type === "letter"){
-
+        //same as name. I would only put in json.meals[i].strMeal in an unordered list
+        //Other properties of interest
+        //strArea: "American" location where food came from
+        //strCategory: "Beef" category
+        //Is interesting to note, that the search letter doesn't always mean all of the meals start with that search letter
       }
       // update DOM with response
     //  updateResult(text);
