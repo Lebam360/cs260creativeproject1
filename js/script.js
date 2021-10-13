@@ -35,11 +35,18 @@ function onClick(e) {
     }).then(function(json) {
       console.log(json); //For informational purposes
       let output = "";
-      if (type === "random") {
+      if (type === "random" || string === "") {
         // update DOM with response
         //information of interest:
         //same as with name. I think the output should be the same. Always outputs meal array with one element
-        output += "Add to me! I want random recipe";
+        output += "<ul>"
+        for (let i=0; i < json.meals.length; i++) {
+          output += "<li> "+ json.meals[i].strMeal;
+          output += "<br><img src='" + json.meals[i].strMealThumb + "'>";
+          output += "<br> Category: "+ json.meals[i].strCategory;
+          output += "<br> Area: "+ json.meals[i].strArea + "<br>";
+        }
+        output += "</ul>"
       }
       else if (type === "name") {
         // update DOM with response
@@ -51,7 +58,14 @@ function onClick(e) {
         //json.meals[i].strMeasure1 is the measurements of the ingredients. It seems to be tied to the ingreditent list (also goes to 20) and should be outputted with the ingredients
         //json.meals[i].strInstructions is one string full of the instructions
         //Perphaps add json.meals[i].strYoutube which links to youtube
-        output += "add me!";
+        output += "<ul>"
+        for (let i=0; i < json.meals.length; i++) {
+          output += "<li> "+ json.meals[i].strMeal;
+          output += "<br><img src='" + json.meals[i].strMealThumb + "'>";
+          output += "<br> Category: "+ json.meals[i].strCategory;
+          output += "<br> Area: "+ json.meals[i].strArea + "<br>";
+        }
+        output += "</ul>";
       }
       else if (type === "letter"){
         //same as name. I would only put in json.meals[i].strMeal in an unordered list

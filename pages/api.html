@@ -38,6 +38,14 @@
   <!--Bootstrap script -->
   <body>
     <div class="page">
+      <div class="titleAPI">
+        <h2>Meal</h2>
+        <p>On this page you can get meal inspiration by looking up meals by; meal name, first letter, or random search!
+          Try typing "cookie" in the search bar and selecting "Meal Name" from the drop down menu to see what fun inspo
+          you get!
+        </p>
+      </div>
+
       <div class="form section">
         <form>
           <!--Put selector on top?
@@ -49,30 +57,29 @@
           <!---Avaliable Recipies: <span id="txtHint">Empty</span> -->
           <!-- <input id="mealButton" type="submit" value="Submit"> -->
 
-          <div class="selector section">
-            <legend>If searching by meal: enter name and select "Meal Name".<br>If searching by letter: enter letter and select "First letter".
-              <br>If random search: select "Random" or just click submit.</legend>
+          <div class="section">
+            <legend>If searching by meal: enter name and select "Meal Name". <br>If searching by letter: enter letter and select "First letter".
+              <br>If random search: select "Random" or just click submit.   </legend>
             <input placeholder="enter string" id="inputString">
             <p></p>
             <select id="selector">
               <option value="name">Meal Name</option>
-              <option value="letter">First letter</option>
+              <option value="letter">First Letter</option>
               <option value="random">Random</option>
             </select>
             <p></p>
             <button id="Submit" class="pure-button pure-button-primary">Submit</button>
           </div>
         </form>
-        <p id="result"></p>
         <script text="type/javascript" src="../js/script.js"></script>
-
+      </div>
+      <p id="result"></p>
       <div class="section footer">
         <p>The Github repository for this website:
           <a href="https://github.com/Lebam360/cs260creativeproject1">https://github.com/Lebam360/cs260creativeproject1</a> <br> Pair programmed by: <br>
           Link back to Anya Anderson's website: <a href="http://anyaanderson.com">Home</a> <br>
           Link back to Alexa Urrea's website: <a href="http://alexauferg.com">Home</a> <br> For image sources, view the html.</p>
       </div>
-    </div>
     <!--Bootstrap script -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
